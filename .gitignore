@@ -1,0 +1,11 @@
+.vscode/
+.idea/
+
+*.pyc
+__pycache__/
+
+# data
+data/
+
+# weights
+weights/

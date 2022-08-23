@@ -1,0 +1,12 @@
+_BASE_: "../Baseline.yml"
+
+INFO:
+  UID: "gigadet_eval_visible_body_yolov5s_topK_32"
+  LOG_LEVEL: "INFO"
+
+TEST:
+  PGN:
+    PATCH_TOP_K: 32
+
+OUTPUT:
+  ROOT_DIR: "outputs/gigadet_eval/history/visible_body/yolov5s/topK/32"

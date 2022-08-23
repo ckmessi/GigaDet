@@ -1,0 +1,13 @@
+_BASE_: "./PANDA-FullBody.yml"
+
+INFO:
+  UID: 'DecDet_PANDA-FullBody-300'
+
+MODEL:
+  CUDA_DEVICE: "'3'"
+
+SOLVER:
+  MAX_EPOCH: 300
+
+OUTPUT:
+  ROOT_DIR: 'outputs/DecDet/PANDA/full_body-300'

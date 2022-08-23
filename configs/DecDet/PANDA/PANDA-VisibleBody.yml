@@ -1,0 +1,20 @@
+_BASE_: "./PANDA-Baseline.yml"
+
+INFO:
+  UID: 'DecDet_PANDA-VisibleBody'
+
+MODEL:
+  CUDA_DEVICE: "'2'"
+
+DATASETS:
+  TRAIN_ROOT: "data/panda_patch_visible_body/images/train2020"
+  VAL_ROOT: "data/panda_patch_visible_body/images/val2020"
+  NUM_CLASSES: 1
+  CLASS_NAMES: ['person']
+
+SOLVER:
+  BATCH_SIZE: 32
+  MAX_EPOCH: 120
+
+OUTPUT:
+  ROOT_DIR: 'outputs/DecDet/PANDA/visible_body'

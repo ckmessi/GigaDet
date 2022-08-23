@@ -1,0 +1,20 @@
+_BASE_: "../Base.yml"
+
+INFO:
+  UID: 'DecDet_uid'
+
+MODEL:
+  CUDA_DEVICE: "'2'"
+
+DATASETS:
+  TRAIN_ROOT: "data/giga_patch_full/images/train2020/"
+  VAL_ROOT: "data/giga_patch_full/images/val2020/"
+  NUM_CLASSES: 1
+  CLASS_NAMES: ["person"]
+
+SOLVER:
+  BATCH_SIZE: 32
+  MAX_EPOCH: 120
+
+OUTPUT:
+  ROOT_DIR: 'outputs/DecDet_Base'

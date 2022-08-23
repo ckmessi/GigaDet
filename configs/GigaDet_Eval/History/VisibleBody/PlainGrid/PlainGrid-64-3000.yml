@@ -1,0 +1,16 @@
+_BASE_: "./PlainGrid-Baseline.yml"
+
+INFO:
+  UID: "gigadet_eval_PlainGrid-64-3000"
+  LOG_LEVEL: "INFO"
+
+TEST:
+  PGN:
+    PATCH_TOP_K: 64
+  GIGADET:
+    PLAIN_GRID:
+      ENABLED: True
+      WIDTH: 3000
+      HEIGHT: 3000
+OUTPUT:
+  ROOT_DIR: "outputs/gigadet_eval/history/visible_body/yolov5s/PlainGrid/64-3000"

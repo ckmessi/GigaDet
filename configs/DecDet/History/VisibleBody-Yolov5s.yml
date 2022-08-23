@@ -1,0 +1,18 @@
+_BASE_: "../../Base.yml"
+
+INFO:
+  UID: 'GigaDet-History-VisibleBody'
+
+MODEL:
+  CFG_FILE_PATH: "gigadetect/models/yolov5/yolov5s.yaml"
+  ARCH: "yolov5s"
+DATASETS:
+  NUM_CLASSES: 1
+  CLASS_NAMES: ["person"]
+
+SOLVER:
+  BATCH_SIZE: 32
+  MAX_EPOCH: 120
+
+OUTPUT:
+  ROOT_DIR: 'outputs/GigaDet_Base'

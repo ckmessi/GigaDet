@@ -1,0 +1,14 @@
+_BASE_: "../Baseline.yml"
+
+INFO:
+  UID: "gigadet_eval_visible_body_yolov5s_trade_off_topk64-input320"
+  LOG_LEVEL: "INFO"
+
+TEST:
+  PGN:
+    PATCH_TOP_K: 64
+  DECDET:
+    INPUT_SIZE: 320
+
+OUTPUT:
+  ROOT_DIR: "outputs/gigadet_eval/history/visible_body/yolov5s/trade_off/topk64-input320"

@@ -1,0 +1,18 @@
+
+INFO:
+  UID: "gigadet_eval_baseline"
+  LOG_LEVEL: "INFO"
+
+TEST:
+  PGN:
+    PATCH_TOP_K: 45
+    PATCH_IOU_THRESHOLD: 0.2
+  DECDET:
+    INPUT_SIZE: 320
+  GIGADET:
+    SHOW_EVERY_IMAGE: True
+    WITHOUT_ENCAPSULATE: True
+    SKIP_DETECT_DIRECTLY: True
+
+OUTPUT:
+  ROOT_DIR: "outputs/gigadet_eval/baseline/"

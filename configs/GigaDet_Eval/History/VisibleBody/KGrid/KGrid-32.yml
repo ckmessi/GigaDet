@@ -1,0 +1,13 @@
+_BASE_: "../topK/topK-32.yml"
+
+INFO:
+  UID: "gigadet_eval_KGrid-32"
+  LOG_LEVEL: "INFO"
+
+TEST:
+  GIGADET:
+    K_GRID:
+      ENABLED: True
+
+OUTPUT:
+  ROOT_DIR: "outputs/gigadet_eval/history/visible_body/yolov5s/KGrid/32"
